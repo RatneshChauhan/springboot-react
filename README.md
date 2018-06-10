@@ -71,14 +71,15 @@ Versioning
 * Spring Boot: 1.5.10.RELEASE
 * React: 16.2.0
 * Material-UI: 0.20.0
+* Maven:
 
 Deployment
 ======================
 
 * API
 
-Run  maven command <code>mvn clean install</code> to generate a WAR file deployable in any servlet containers like Tomcat, Jboss, Websphere etc.
- 
+Run <code>mvn clean install</code> to generate a WAR file deployable in any servlet containers like Tomcat, Jboss, Websphere etc. 
+
 * UI
 
 Run <code>npm run build</code> 
