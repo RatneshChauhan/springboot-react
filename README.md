@@ -11,7 +11,8 @@ React with Spring Boot
 
 Description
 ====================
-A react component named "ServerDataComponent.tsx" makes an AJAX GET call using Fetch to Springboot REST API which calls the Spring Data JPA repository to get the data from MySQL database to populate Material-UI table.
+* UI is a react app making ajax call to API using Fetch. 
+* API is a spring boot REST API fetching data from a MySQL database table through JPA repository.
 
 Developed Using
 ===================
@@ -20,7 +21,7 @@ Developed Using
 * Maven - Dependency Management
 * ES6 – The next version of JavaScript. Allows us to write real JavaScript classes.
 * JSX – Allows us to place HTML in JavaScript without concatenating strings.
-* Typescript - To transpile our ES6 and TSX (or JSX) into ES5 and Javascript
+* Typescript (TSC) - To transpile our ES6 and TSX (or JSX) into ES5 and Javascript
 * Webpack – Allows us to pack all of our JavaScript files into one bundle
 * Springboot - RESTful Spring Boot Microservices with Spring Data JPA (Spring Data REST)
 * Hibernate - JPA provider
@@ -64,8 +65,12 @@ Quick Start Development
 
 Versioning
 ======================
-V1.0
-
+* Node: 8.9.4
+* NPM:  5.6.0
+* Create React App: 1.5.2
+* Spring Boot: 1.5.10.RELEASE
+* React: 16.2.0
+* Material-UI: 0.20.0
 Deployment
 ======================
 Run mvn clean install to generate a WAR file deployable in any containers like Tomcat, Jboss, Websphere etc.
