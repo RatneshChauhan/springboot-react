@@ -71,6 +71,7 @@ Versioning
 * Spring Boot: 1.5.10.RELEASE
 * React: 16.2.0
 * Material-UI: 0.20.0
+
 Deployment
 ======================
 Run mvn clean install to generate a WAR file deployable in any containers like Tomcat, Jboss, Websphere etc.
