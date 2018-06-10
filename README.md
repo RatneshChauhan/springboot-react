@@ -76,10 +76,12 @@ Deployment
 ======================
 
 * API
+
 Run  maven command <code>mvn clean install</code> to generate a WAR file deployable in any servlet containers like Tomcat, Jboss, Websphere etc.
  
 * UI
- Run <code>npm run build</code> 
+
+Run <code>npm run build</code> 
  
  It builds the app for production to the build folder.
  It correctly bundles React in production mode and optimizes the build for the best performance.
