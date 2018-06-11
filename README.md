@@ -59,9 +59,9 @@ Quick Start Development
 * Restore database:
   Create my_customer_db named database on the target machine and run:
   mysql -u root -p my_customer_db <path-to-db_backup>\db_backup.sql to restore the backup
-* Run npm start in VSCode
+* Run npm install and then npm start in VSCode command line
 * Hit http://localhost:3000/
-* You can now view my-react-app-with-typescript in the browser proxying request /api/customer/all from http://localhost:3000 to http://localhost:8080/ 
+* You can now view my-react-app-with-typescript in the browser proxying request /api/customer/all from http://localhost:3000 to          http://localhost:8080/ 
 
 Versioning
 ======================
