@@ -89,22 +89,27 @@ Run <code>npm run build</code>
  The build is minified and the filenames include the hashes.
  Your app is ready to be deployed! 
  
+ Set up your favorite HTTP server and copy this build folder so that a visitor to your site is served index.html, and requests to static  paths like /static/js/main.<hash>.js are served with the contents of the /static/js/main.<hash>.js file.
+ 
 Static Server Deployment
 ========================
 For environments using Node, the easiest way to deploy it would be to install serve and let it handle the rest:
 
-<code>npm install -g serve
-serve -s build</code>
+<code>npm install -g serve</code>
+<code>serve -s build</code>
+
 The last command shown above will serve your static site on the port 5000. Like many of serve’s internal settings, the port can be adjusted using the -p or --port flags.
 
-Ohter Deployment Methods
+Other Deployment Methods
 ======================
 * You don’t necessarily need a static server in order to run a Create React App project in production. It works just as fine integrated into an existing dynamic one like Node with Express.
 * The choice of your server software isn’t important either. Since Create React App is completely platform-agnostic, there’s no need to explicitly use Node.
 
-The build folder with static assets is the only output produced by Create React App.
+The build folder with static assets is the only output produced by Create React App. Copy the build folder in your HTTP server and 
 
-However this is not quite enough if you use client-side routing. Read the next section if you want to support URLs like /todos/42 in your single-page app.
+
+
+However this is not quite enough if you use client-side routing. 
 
 
 
