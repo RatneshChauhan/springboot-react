@@ -5,9 +5,15 @@ Tech Stack
 ================
 React for Frontend | Springboot for Middleware (Spring Data REST JPA) | MySQL for Backend
 
-Project Title
-==============
-React with Spring Boot
+JWT for Authentication and Authorization  
+===========================================
+On successful login, clinet recieves a JWT token included 'Authorization' header from server and sets that token up in the local storage. On subsequent requests, this token has been sent back to server as an 'Authorization' header and validated for authorization.On logout this token is removed from local storage. 
+
+Login Credentials
+=========================
+username: admin
+
+password: password
 
 Description
 ====================
