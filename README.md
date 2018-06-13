@@ -1,10 +1,6 @@
 # React + Springboot + MySQL
 This project is an integration of Springboot, MySQL database and React app. Material-UI has also been used for beautification.
 
-Tech Stack
-================
-React for Frontend | Springboot for Middleware (Spring Data REST JPA) | MySQL for Backend
-
 JWT for Authentication and Authorization  
 ===========================================
 On successful login, clinet recieves a JWT token included 'Authorization' header from server and sets that token up in the local storage. On subsequent requests, this token has been sent back to server as an 'Authorization' header and validated for authorization.On logout this token is removed from local storage. 
