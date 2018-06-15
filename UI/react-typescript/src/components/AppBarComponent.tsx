@@ -1,15 +1,14 @@
 import * as React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
 import FlatButton from 'material-ui/FlatButton';
 import AppBar from 'material-ui/AppBar';
 import IconButton from 'material-ui/IconButton';
 import IconMenu from 'material-ui/IconMenu';
 import MenuItem from 'material-ui/MenuItem';
-
 import MoreVertIcon from 'material-ui/svg-icons/navigation/more-vert';
 import Dialog from 'material-ui/Dialog';
-
 import Login from './LoginComponent'
+import About from './AboutComponent'
 
 
 
@@ -42,9 +41,9 @@ export default class AppBarComponent extends React.Component <any,State>{
           targetOrigin={{horizontal: 'right', vertical: 'top'}}
           anchorOrigin={{horizontal: 'right', vertical: 'top'}}
         >
-          <MenuItem primaryText="Refresh" />
-          <MenuItem primaryText="Help" />
-          <MenuItem primaryText="Sign out" onClick={this.handleLogout} />
+          <MenuItem primaryText="About Me" tabIndex={1} />
+          <MenuItem primaryText="Help" tabIndex={2}/>
+          <MenuItem primaryText="Sign out" onClick={this.handleLogout} tabIndex={3} />
         </IconMenu>
       );
       //Logged.muiName = 'IconMenu';
@@ -71,16 +70,18 @@ render() {
   
     return (
 
-<MuiThemeProvider>         
+<div>     
+      <About/>
           <AppBar
           title={ localStorage.getItem('auth')?"Welcome! Admin":"Login to see more..."} 
           iconElementLeft={<IconButton></IconButton>}   
-          
+
           iconElementRight={
             localStorage.getItem('auth')? <this.Logged /> : 
           <FlatButton label="Login" primary={true} onClick={this.handleLogin}   />
         }
         />
+        
          {this.state.openDialog?
                <Dialog
                title='Login'
@@ -93,7 +94,7 @@ render() {
           {<Login openDialog={this.handleClose}  />}
                </Dialog>:""
             }  
-</MuiThemeProvider>
+</div>
 
     );
 }

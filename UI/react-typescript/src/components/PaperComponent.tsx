@@ -1,6 +1,6 @@
 import * as  React from 'react';
 import Paper from 'material-ui/Paper';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
 
 const style = {
   height: 100,
@@ -19,7 +19,7 @@ export default class TabsExampleControlled extends React.Component<{},{}> {
     render() {
         return (
     
-<MuiThemeProvider>
+<div>
     <Paper style={style} zDepth={1} rounded={false} >
     
     </Paper>
@@ -27,7 +27,7 @@ export default class TabsExampleControlled extends React.Component<{},{}> {
     <Paper style={style} zDepth={3} rounded={false} />
     <Paper style={style} zDepth={4} rounded={false} />
     <Paper style={style} zDepth={5} rounded={false} />
-    </MuiThemeProvider>
+    </div>
         )
     }
 }

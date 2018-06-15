@@ -6,7 +6,7 @@ import Paper from 'material-ui/Paper';
 import ErrorBoundary from './ErrorBoundary'
 
 
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
 
 const paperStyle = {
   height: 475,
@@ -51,7 +51,7 @@ this.setState({
 
   render() {
     return (
-      <MuiThemeProvider>
+      <div>
       <Tabs
         value={this.state.value}
         onChange={this.handleChange}
@@ -84,7 +84,7 @@ this.setState({
         </p>
         </Tab>
       </Tabs>
-      </MuiThemeProvider>
+      </div>
     );
   }
 }

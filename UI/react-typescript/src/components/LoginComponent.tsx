@@ -1,5 +1,5 @@
 import * as React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
 import TextField from 'material-ui/TextField';
 import FlatButton from 'material-ui/FlatButton';
  
@@ -98,7 +98,7 @@ export default class LoginComponent extends React.Component<Props,State> {
         <div>
             
             
-    <MuiThemeProvider> 
+    
     <TextField
       hintText="Username"
       floatingLabelText="Please enter username"
@@ -115,7 +115,7 @@ export default class LoginComponent extends React.Component<Props,State> {
     />
     <FlatButton label="Login" primary={true}  onClick={this.login}
     />        
-    </MuiThemeProvider>
+    
 </div>
         )
     }

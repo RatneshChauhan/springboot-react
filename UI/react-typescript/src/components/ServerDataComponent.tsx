@@ -1,5 +1,5 @@
 import * as React from 'react';
-import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+
 import {Table, TableBody, TableHeader, TableRow,
   TableHeaderColumn, TableRowColumn} from 'material-ui/Table';
   
@@ -71,7 +71,7 @@ export default class ServerDataComponent extends React.Component<Props, State> {
     }
       return (
         
- <MuiThemeProvider>    
+ <div>    
 <Table multiSelectable>
 
 <TableHeader>
@@ -96,7 +96,7 @@ export default class ServerDataComponent extends React.Component<Props, State> {
   )}
 </TableBody>
 </Table>
-</MuiThemeProvider>
+</div>
       );
     }
   }
