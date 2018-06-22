@@ -57,8 +57,8 @@ Notes
     1.5.2</code>
  
 
-Quick Start Development
-============
+Quick Development Setup
+=======================
 <pre>
 * git clone https://github.com/RatneshChauhan/Springboot-React-Typescript-Material-UI-MySQL.git
 * Imported as maven project in eclipse or sts. Run springboot application on embedded Tomcat. 
