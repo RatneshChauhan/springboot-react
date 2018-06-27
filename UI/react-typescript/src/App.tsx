@@ -6,16 +6,10 @@ import darkBaseTheme from 'material-ui/styles/baseThemes/darkBaseTheme';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import getMuiTheme from 'material-ui/styles/getMuiTheme'
 
-
-//import Toggle from 'material-ui/Toggle';
-
-//const logo = require('./logo.svg');
-
 class App extends React.Component <any,any>{
   constructor(props:any) {
     super(props); 
-  
-  }
+   }
   
   render() { 
     
@@ -24,11 +18,11 @@ class App extends React.Component <any,any>{
         <MuiThemeProvider muiTheme={getMuiTheme(darkBaseTheme)}>
         
            <AppBar /> 
-           
-          <Loading/> 
-          </MuiThemeProvider>
-        <em id="em">Powered by<h4 id="poweredBY">Spring-Boot, JWT, MySQL and Material-UI</h4>
-          </em>
+           <Loading/> 
+          
+        </MuiThemeProvider>
+
+        <em id="em">Powered by<h4 id="poweredBY">Spring-Boot, JWT, MySQL and Material-UI</h4></em>
 
       </div>
     );
