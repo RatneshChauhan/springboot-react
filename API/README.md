@@ -42,8 +42,8 @@ Step 3: Create a JPA Entity and Spring Data JPA Repository Interface for the Ent
 
 Step 4: Create a RESTful endpoint controller to serves the request by calling JPA repository methods
 
-Security: User Authentication and Authorization on Spring Boot using JWT
-=======================================================================
+Security: User Authentication and Authorization using Spring Boot Security and JWT
+=================================================================================
 JSON Web Token (JWT) is a way to generate auth tokens. It’s is an open standard (RFC 7519) that defines a simple way for securely transmitting information between client and server as a JSON object.
 
 JWT Tokens V/S Cookies
