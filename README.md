@@ -13,8 +13,8 @@ password: password
 
 Description
 ====================
-* UI is a react app making ajax call to API using Fetch. 
-* API is a spring boot REST API fetching data from a MySQL database table through JPA repository.
+* UI is a react app in Typescript making ajax call to REST API using Fetch. 
+* API is a spring boot REST API fetching data from a MySQL database table through JPA (Hibernate) repository.
 
 Developed Using
 ===================
