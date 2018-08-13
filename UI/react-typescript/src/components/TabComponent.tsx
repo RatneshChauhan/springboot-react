@@ -56,7 +56,7 @@ this.setState({
         value={this.state.value}
         onChange={this.handleChange}
       >
-        <Tab label="Paper" value="a">
+        <Tab label="Information Paper" value="a">
          
             <Paper style={paperStyle} zDepth={5} rounded={false} >
             
@@ -66,7 +66,7 @@ this.setState({
            
           
         </Tab>
-        <Tab label="Table" value="b" onActive={ this.showTable }>
+        <Tab label="All Users" value="b" onActive={ this.showTable }>
        
           <div>  
           {

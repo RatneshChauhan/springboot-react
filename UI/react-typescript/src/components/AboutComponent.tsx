@@ -1,8 +1,9 @@
 import * as React from 'react';
 import {Card,  CardHeader,  CardTitle, CardText} from 'material-ui/Card';
+import '../About.css';
 //import FlatButton from 'material-ui/FlatButton';
 import Toggle from 'material-ui/Toggle';
-const logo = require('../ratnesh.JPG');
+const logo = require('../DEV.JPG');
 
 export default class AboutComponent extends React.Component<any,any> {
 
