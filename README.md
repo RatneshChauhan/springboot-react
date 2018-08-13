@@ -31,12 +31,7 @@ Developed Using
 * MySQL - Database
 * JWT – For token based user authentication and authorization
 </pre>
-Final App will look like this
-===============================
 
-User login is required to see ALL USERS (just click second Tab)
-
-![alt text](https://github.com/RatneshChauhan/springboot-react/blob/master/App.png "App")
 Prerequisites
 =================
 <pre>
@@ -76,7 +71,13 @@ Quick Development Setup
 * You can now view my-react-app-with-typescript in the browser proxying request /api/customer/all from http://localhost:3000 to          http://localhost:8080/ 
 </pre> 
 
-Versioning
+User login (admin/password) is required to see ALL USERS (just click second Tab) 
+====================================================================
+
+![alt text](https://github.com/RatneshChauhan/springboot-react/blob/master/App.png "App")
+
+
+Versions 
 ======================
 <pre>
 * Node: 8.9.4
