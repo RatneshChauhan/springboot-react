@@ -31,6 +31,7 @@ Developed Using
 * MySQL - Database
 * JWT – For token based user authentication and authorization
 </pre>
+![alt text](https://github.com/RatneshChauhan/springboot-react/blob/master/App.png "App")
 Prerequisites
 =================
 <pre>
