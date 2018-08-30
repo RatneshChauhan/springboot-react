@@ -72,7 +72,6 @@ Quick Development Setup
 </pre> 
 
 ![alt text](https://github.com/RatneshChauhan/springboot-react/blob/master/App.png "App")
-
 Versions 
 ======================
 <pre>

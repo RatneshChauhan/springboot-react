@@ -39,14 +39,27 @@ public class CustomerController {
 	}
 	
 	@GetMapping("/all")
-	public List<Customer> getAllCustomers() {
+	public List<Customer> get() {
 		LOGGER.info("get all customers");
 		return customerRepository.findAll();
 	}
 
 	@PostMapping("/create")
-	public Customer createCustomer(@Valid @RequestBody Customer customer) {
+	public Customer create(@Valid @RequestBody Customer customer) {
 		return customerRepository.save(customer);
+	}
+	
+	@PostMapping("/update")
+	public Customer update(@Valid @RequestBody Customer customerUpdate) {
+		Customer customerFind = customerRepository.findOne(customerUpdate.getId());
+		customerFind.setFirstName(customerUpdate.getFirstName());
+		customerFind.setLastName(customerUpdate.getLastName());
+		return customerRepository.save(customerFind);
+	}
+	
+	@PostMapping("/delete/{id}")
+	public void delete(@PathVariable(value = "id") Long customerId) {
+		 customerRepository.delete(customerId);
 	}
 
 	@GetMapping("/find/{id}")

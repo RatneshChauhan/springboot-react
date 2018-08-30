@@ -89,7 +89,14 @@ public class Customer {
 	public void setUpdatedAt(Date updatedAt) {
 		this.updatedAt = updatedAt;
 	}
-	protected Customer() {}
+	protected Customer() {
+		if(createdAt==null)
+			this.setCreatedAt(new Date());
+			
+		if(updatedAt==null)
+			this.setUpdatedAt(new Date());
+		
+	}
 
 	public Customer(String firstName, String lastName) {
 		this.firstName = firstName;
