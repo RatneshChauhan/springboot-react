@@ -62,7 +62,7 @@ Quick Development Setup
 =======================
 <pre>
 * git clone https://github.com/RatneshChauhan/Springboot-React-Typescript-Material-UI-MySQL.git
-* Imported as maven project in eclipse or sts. Run springboot application on embedded Tomcat. 
+* Import as maven project in eclipse or sts. Run springboot application on embedded Tomcat. 
 * Restore database:
   Create my_customer_db named database on the target machine and run:
   mysql -u root -p my_customer_db <path-to-db_backup>\db_backup.sql to restore the backup
@@ -71,11 +71,7 @@ Quick Development Setup
 * You can now view my-react-app-with-typescript in the browser proxying request /api/customer/all from http://localhost:3000 to          http://localhost:8080/ 
 </pre> 
 
-User login (admin/password) is required to see ALL USERS (just click second Tab) 
-====================================================================
-
 ![alt text](https://github.com/RatneshChauhan/springboot-react/blob/master/App.png "App")
-
 
 Versions 
 ======================
@@ -103,8 +99,6 @@ Deployment
  It correctly bundles React in production mode and optimizes the build for the best performance.
  The build is minified and the filenames include the hashes.
  Your app is ready to be deployed! 
- 
-
  </pre>
  
 Static Server Deployment
